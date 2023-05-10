@@ -1,0 +1,40 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 470px;
+    background-image: url('../../resources/Home/background-2.jpg');
+}
+
+.comments-name {
+    font-size: 14px;
+}
+
+.comments {
+        width: 650px;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        margin: 2em;
+        text-align: center;
+        transition: all 0.25s;
+        background-color: rgb(245, 245, 245);
+}
+
+.texto {
+    margin: 50px;
+    background-image: url('../../resources/Home/background-2.jpg');
+    text-align: center;
+    font-display: white;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration-color: aliceblue;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.registerform {
+    text-align: center;
+}

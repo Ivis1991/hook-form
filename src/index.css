@@ -1,13 +1,131 @@
+/*
+*/
+@font-face {
+  font-family:"Poppins Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./resources/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family:"Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./resources/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family:"Poppins Semi Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./resources/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family:"Poppins Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./resources/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family:"Poppins Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./resources/fonts/Poppins-Thin.ttf);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-y:overlay;
+  font-family: "Poppins Regular";
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100, 0.16);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0%, 100, 0.2);
+}
+
+body ::-webkit-scrollbar-track {
+  background-color: hsla(0, 0%, 100, 0.1);
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 14px 0; 
+  width: 160px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Poppins Semibold";
+
+  }
+
+.btn:active {
+transform: translateY(2px);
+}
+
+.primary-btn {
+  /* Datos del recuadro del botón de Contacto*/
+  color:var(——white);
+  border:2px solid  linen;
+  font-size: 14px;
+  background-color: #f2f3fa; 
+}
+
+.primary-btn:hover{
+  /* Datos del comportamiento luego del Click */ 
+  color:rgb(240, 245, 255);
+  border:2px solid ;
+  font-size: 14px;
+  background-color: #1f2235; 
+}
+
+
+.highlighted-btn{
+  color: white;
+  font-size: 14px;
+  border:2px solid ;
+  border: 10px px solid #ffffff ;
+  background-color: #1f2235;
+}
+
+.highlighted-btn:hover{
+  color:#1f2235;
+  font-size: 14px;
+  border:2px solid ;
+  border: 10px px solid #ffffff ;
+  background-color: #f6f6fa;
+}
+
+
+
+@media only screen and (max-width:568px){
+  .highlighted-btn {
+    z-index: -900;
+  }
+}
+
+.red-border {
+  border: 1 px solid var(--error-message) !important;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
 }

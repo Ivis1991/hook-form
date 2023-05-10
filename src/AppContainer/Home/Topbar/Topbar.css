@@ -1,0 +1,65 @@
+
+.topbar-parent {
+ height: 5px;
+ width: 100%;
+ margin: 5px 0 0 0;
+}
+
+.primary-btn{
+    height: 50px;
+    width: 100px; 
+    background-color: white;
+    border: none;
+    display:inline;
+    font-size: 16px;
+    align-items: center;
+}
+
+.second-btn{
+    height: 50px;
+    width: 100px; 
+    background-color: white;
+    border: none;
+    display:inline;
+    font-size: 16px;
+    align-items: center;
+}
+
+.five-btn{
+    height: 50px;
+    width: 100px; 
+    background-color: white;
+    border: none;
+    display:inline;
+    font-size: 16px;
+    align-items: center;
+}
+
+@media only screen and (max-width:1110px){
+.topbar-parent{
+    display: flex;
+    align-items: flex-end;
+}
+}
+
+
+button[type="submit"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+.button[type="submit"],
+input[type="submit"] {
+  background: #2a16bf;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+
+
